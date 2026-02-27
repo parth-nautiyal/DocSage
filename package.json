@@ -1,0 +1,19 @@
+{
+  "name": "docsage",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev": "docker-compose up",
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api dev",
+    "dev:worker": "pnpm --filter worker dev",
+    "build": "pnpm --filter '*' build",
+    "lint": "pnpm --filter '*' lint",
+    "typecheck": "pnpm --filter '*' typecheck",
+    "test": "pnpm --filter '*' test"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
